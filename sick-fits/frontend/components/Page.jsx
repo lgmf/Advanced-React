@@ -25,6 +25,30 @@ const Main = styled.main`
   padding: 2rem;
 `;
 
+injectGlobal`
+  @font-face {
+    font-family: 'RadnikaNext';
+    src: url('/static/radnikanext-medium-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  html {
+    box-sizing: border-box;
+    font-size: 10px;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'RadnikaNext';
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  a { 
+    text-decoration: none;
+    color: ${theme.black};
+  }
+`;
+
 class Page extends Component {
   render() {
     return (
